@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>{{.Title}} </title>
+</head>
+<table border="1">
+   <thead>
+     	<tr>
+		   <td>Name</td>
+		  <td>Age</td>
+		</tr>
+   </thead> 
+   <tbody>
+     	{{with .Infos}}
+		    {{range .}}
+				<tr>
+				   <td>{{.Name}}</td>
+				  <td>{{.Age}}</td>
+				</tr>
+			{{end}}
+		{{end}}
+   </tbody>
+</table>
+</html>
